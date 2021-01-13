@@ -1,0 +1,233 @@
+
+/* Start Base Style */
+body{
+    font-family: 'poppins', sans-serif;
+    background-color: white;
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+/* End Base Style */
+
+/* Start NAV */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -3px;
+    left: 0;
+    width: 100%;
+    background: white;
+    ;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    
+}
+
+.nav-list a {
+    color: black;
+    display: inline;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.nav-list a:hover {
+    background: black;
+    color: white;
+}
+
+/* End NAV */
+
+/* Start Landing Page */
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #181719, #3a3d40);
+    font-size: 3rem;
+}
+
+
+.hello h1 {
+    margin-left: 70rem;
+    color: White;    
+}
+
+
+}
+/* End Landing Page */
+
+/* Start Project Section */
+.projects {
+    display: grid;
+    padding: 10rem 2rem;
+    background: white;
+    text-align: center;
+}
+
+.projects h2 {
+    border-bottom:0.2rem solid var(rgba(0, 0, 0, 0.5));
+    max-width: 640px;
+    margin: 0 auto 6rem;
+    color: black;
+    font-size: 3rem;
+}
+
+.line {
+    font-weight: 100;
+}
+
+    /* (START)"Automagic" image grid using no media queries */
+    .projects-card {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 4rem;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    } 
+
+    @media (max-width: 960px) {
+        .projects {
+            padding: 6rem 1rem;
+        }
+        .projects-card {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+    }
+
+    @media (max-width: 800px) {
+        .projects {
+            padding: 6rem 1rem;
+        }
+        .projects-card {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .project {
+        background: white;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 2px;
+    }
+    
+    .project-image {
+        width: 100%;
+        height: calc(100% - 6.8rem);
+        object-fit: cover;
+    }
+    
+    .project-title {
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+        color: rgba(0, 28, 19, 0.99);
+        text-align: center;
+        font-weight: bolder;
+    }
+    /* (END)"Automagic" image grid using no media queries */
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    color: white;
+}
+
+.btn-show-all {
+    font-size: 2rem;
+    background: rgba(0, 28, 19, 0.99);
+    transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+    background: white;
+    color:  rgba(0, 28, 19, 0.99);
+}
+    /* Icon (but doesn't work) */
+    .btn-show-all > i {
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+    margin-left: 10px;
+    }
+
+    .btn-show-all:hover > i {
+    transform: translateX(2px);
+    }
+    /* Icon (but doesn't work) */
+
+/* End Project Section */
+
+/* Start Contact */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0rem;
+    background: black;
+}
+
+.contact-section-header {
+    color: white;
+}
+
+.contact-section-header > h2 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.contact-section-header > p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 1.5rem;
+    transition: transform 0.1s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(-8px);
+}
+/* End Contact */
+
+/* Start Footer */
+footer {
+    text-align: right;
+    color: black;
+    background:  white;
+    width: 100%;
+    font-family: 'comic sans ms';
+    font-size: 20px;
+}
+
+.foot {
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+/* End Footer */
