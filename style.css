@@ -1,0 +1,73 @@
+/*start bg-vid section*/
+#bg-vid{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/*end bg-vid section*/
+
+/*start land section*/
+
+    /*start id section*/
+    .id {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 70%;
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.5);
+        align-items: center;
+    }
+    .id header {
+        color: white;
+        display: grid;
+        text-align: center;
+        margin-top: 150px;
+    }
+    .name{
+        font-family: Metrophobic;
+        font-size: 100px;
+    }
+    .des{
+        font-family: Raleway;
+        font-size: 30px;
+    }
+    /*end id section*/
+
+    /*start sections section*/
+    .sections{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        height: 30%;
+        background-color: rgb(0, 0, 0, 0.5);
+        color: white;
+        display: grid;
+        grid-column: 33.33% 33.33% 33.33%;
+        font-family: Metrophobic;
+        font-size: 30px;
+    }
+
+    .about{
+        display: flex;
+        grid-column: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects{
+        display: flex;
+        grid-column: 2;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        display: flex;
+        grid-column: 3;
+        align-items: center;
+        justify-content: center;
+    }
+    /*end sections section*/
+
+/*end land section*/
